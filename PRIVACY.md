@@ -28,8 +28,8 @@
 서버에 붙을 때 일반 인터넷 접속처럼 IP 주소가 Cloudflare 에 전해집니다. 창을 2분 넘게 내려 두면 연결을 끊습니다.
 서버가 안 되거나 인터넷이 없으면 조용히 혼자 모드로 합니다.
 
-**내용 업데이트** — 앱을 켜고 15초쯤 뒤, `https://swbins.github.io/apps/village/manifest.json`(내용 목록)을 한 번 받아 봅니다.
-목록이 앱 안의 것보다 새것이면, 바뀐 파일만 같은 사이트(`swbins.github.io`)에서 받습니다. 받은 파일은 목록에 적힌 SHA256 값과 맞을 때만 씁니다.
+**내용 업데이트** — 앱을 켜고 15초쯤 뒤, `https://github.com/swbins/nunmaeul/releases/download/content/manifest.json`(내용 목록 — 이 저장소의 「content」 릴리스 첨부)을 한 번 받아 봅니다.
+목록이 앱 안의 것보다 새것이면, 바뀐 파일만 같은 릴리스 첨부에서 받습니다. 받은 파일은 목록에 적힌 SHA256 값과 맞을 때만 씁니다.
 이때 보내는 것은 파일 요청뿐입니다. 사이트는 GitHub Pages 에 있어서, GitHub 쪽에는 일반 웹 접속처럼 IP 주소가 남을 수 있습니다.
 업데이트 확인을 끄려면 환경변수 `GAMES_NO_UPDATE=1` 을 두고 실행하세요.
 
